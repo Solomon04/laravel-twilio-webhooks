@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/', 'HomeController@index')->name('home');
+Route::post('/assign', 'HomeController@assign')->name('assign');
+
+Route::get('/sms', function(){
+   return "sms";
+})->name('sms');
+
+Route::get('/voice', function(){
+    return "voice";
+})->name('voice');

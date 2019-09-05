@@ -34,4 +34,12 @@ return [
         'secret' => env('SPARKPOST_SECRET'),
     ],
 
+    'twilio' => [
+        'sid' => env('TWILIO_SID'),
+        'token' => env('TWILIO_TOKEN'),
+        'from' => env('TWILIO_FROM'),
+        'sms_uri' => env("TWILIO_SMS_URI"),
+        'voice_uri' => env("TWILIO_VOICE_URI")
+    ]
+
 ];
